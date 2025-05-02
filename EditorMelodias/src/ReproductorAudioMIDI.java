@@ -48,7 +48,7 @@ public class ReproductorAudioMIDI {
             int notaMidi = NOTAS_MIDI[notaMusical.getNota().ordinal()] + (notaMusical.getOctava() - 4) * 12;
     
             // Validar si la nota está dentro del rango MIDI audible
-            if (notaMidi < 21 || notaMidi > 108) {
+            if (notaMidi > 108) {
                 System.out.println("Nota fuera de rango audible: " + notaMidi + " (Octava " + notaMusical.getOctava() + ")");
                 synth.close();
                 return;

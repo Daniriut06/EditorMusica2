@@ -78,7 +78,7 @@ public class FrmEditor extends JFrame {
 
         cmbOctava = new JComboBox<>();
         cmbOctava.setToolTipText("Octava");
-        for (int i = 1; i <= 7; i++) { // octavas de 1 a 7, seguras para la mayoría de notas
+        for (int i = 0; i <= 7; i++) { // octavas de 1 a 7, seguras para la mayoría de notas
             cmbOctava.addItem(i);
         }
 
